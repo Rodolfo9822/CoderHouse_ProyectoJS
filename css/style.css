@@ -245,6 +245,7 @@ body{
 }
 
 .botonDescripcion:hover{
+    cursor: pointer;
     background-color: rgba(var(--fondoGris)); 
 }
 
