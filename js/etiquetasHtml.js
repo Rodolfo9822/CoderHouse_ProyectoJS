@@ -12,7 +12,6 @@ const agregarLinks = () => {
     })
 }
 
-
 agregarLinks();
 
 /* Codigo para los anuncios de dispositivos */
@@ -61,16 +60,9 @@ const anunciosAutomaticos = () => {
         textosAnuncio.innerHTML = "";
         enlaceAnuncio.innerHTML = "";
         imagenAnuncio.innerHTML = "";
-
         crearAnuncion(i, textosAnuncio, enlaceAnuncio, imagenAnuncio)
     }
 }
-
-const botontest = document.querySelector("#botontest");
-
-botontest.addEventListener("click", ()=>{
-    anunciosAutomaticos();
-}, false);
 
 
 
