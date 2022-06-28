@@ -47,7 +47,11 @@ body{
 }
 
 .logo{
-    color: var(--textoColor);
+    color: var(--textoColor);   
+}
+
+.header a {
+    text-decoration: none;
 }
 
 .logoPa2{
@@ -332,8 +336,7 @@ body{
     padding: 1rem 5rem;
     border-radius: 1rem; 
     font-size: 2rem;
-    
-    background-image: linear-gradient(to left, #8c1414 0%, #b79ca7  /* rgba(80,80,80,80%) */ 100% );
+    background-image: linear-gradient(to left, #8c1414 0%, #b79ca7 100% );
     border: 3px solid black;
 }
 
@@ -344,7 +347,6 @@ body{
 /* CSS footer */
 .footer--style{
     background-color: rgba(var(--fondoGris));
-    
 }
 
 .gridFooter{
@@ -357,6 +359,7 @@ body{
     font-size: 2.3rem;
     font-weight: 500;
     text-align: center;
+    margin: 2rem 0;
 }
 
 .iconoRedes{
@@ -370,5 +373,92 @@ body{
     font-size: 1.8rem;
     font-weight: 500;
     text-align: center;
+}
+
+/* ======================================== Iniciar Sesison ======================================== */
+.sesion__tamanio{
+    width: min(85%, 100rem);
+    margin: 0 auto;
+    height: 40rem;
+    margin-bottom: 20rem;
+    
+}
+
+.sesion--style{
+    border-radius: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.backgroundSesion{
+    background-image: linear-gradient(to top, #ace5ee  0%, white 100%);
+    border-top-left-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+    padding: 5rem 0rem 10rem 0;
+    border: 2px solid black;
+}
+
+.backgroundSesion2{
+    background-image: linear-gradient(to top, rgba(var(--fondoNegro)) 0%, white 100%);
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    padding: 5rem 0rem 10rem 0;
+    border: 2px solid black;
+}
+
+.sesionUser{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;    
+}
+
+.tituloContainer__texto{
+    font-size: 4rem;
+    color: var(--fondoNegro);
+}
+
+.camposContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.camposUsuario--style{
+    width: 80%;
+    margin-left: 3rem;
+    font-size: 2rem;
+    padding: 1rem 0rem 1rem 2rem;
+    border-radius: 2rem;
+    border: 2px solid black;
+    box-shadow: 10px 22px 18px -3px rgba(0,0,0,0.62);
+}
+
+.botosContainer{
+    width: 100%;
+    margin: 2rem auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botones{
+    padding: 1rem 3rem;
+    border-radius: 1rem; 
+    font-size: 1.8rem;
+    color: white;
+    background-image: linear-gradient(to left, #672a42   0%, #aa6f73  100% );
+    border: none;
+    box-shadow: 10px 22px 18px -3px rgba(0,0,0,0.62);
+}
+
+
+.imagenUsu{
+    width: 70%;
+}
+
+.backgroundSesion2__size{
+    display: flex;
+    justify-content: center;
 }
 
