@@ -32,3 +32,7 @@ const anuncioEquipos = [
     }
 ]
 
+const usuarioPredeterminado =  {
+        nickname: "CoderHouse",
+        password: "12345"
+    }    

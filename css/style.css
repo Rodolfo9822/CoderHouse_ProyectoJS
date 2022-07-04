@@ -1,100 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200;1,300;1,400&display=swap");
+
 :root {
-    --textoColor : #fff;
+    --textoColor: #fff;
     --globalBottom: 10rem;
-    --fondoNegro: 1,1,1,80%;
-    --fondoGris: 80,80,80, 100%;
+    --fondoNegro: 1, 1, 1, 80%;
+    --fondoGris: 80, 80, 80, 100%;
     --borderGContainer: 3rem;
 }
 
-*{
+* {
     box-sizing: border-box;
-    
+
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
-body{
+body {
     margin: 0;
     font-size: 1.6rem;
     background-color: rgba(0, 0, 0, 80%);
+    font-family: 'Raleway', sans-serif;
 }
 
-.container{
+.container {
     width: min(85%, 130rem);
     margin: 0 auto;
 }
 
+.disenioBoton {
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    color: var(--textoColor);
+    background-image: linear-gradient(to left, #672a42 0%, #aa6f73 100%);
+    border: none;
+    box-shadow: 10px 22px 18px -3px rgba(90, 90, 90, 0.62);
+    border: 3px solid black;
+}
+
 /* Codigo CSS para el header */
 
-.containerHeader{
-    width: 90% ;
+.containerHeader {
+    width: 90%;
     margin: 0 auto;
 }
 
-.header{
+.header,
+.containerCantida {
     display: flex;
     align-items: center;
+}
+
+.header {
     justify-content: center;
     gap: 5rem;
     margin-bottom: var(--globalBottom);
 }
 
-.headerFondo{
+.headerFondo {
     background-color: rgba(var(--fondoNegro));
-    
 }
 
-.logo{
-    color: var(--textoColor);   
+.logo {
+    color: var(--textoColor);
+    font-weight: 300;
 }
 
 .header a {
     text-decoration: none;
 }
 
-.logoPa2{
+.logoPa2 {
     display: block;
+    font-weight: 700;
 }
 
-.link--style{
-    font-size: 2rem;
+.link--style {
     text-decoration: none;
     color: var(--textoColor);
     margin-left: 5rem;
     transition: font-size 2s ease-out;
 }
 
-.link--style:hover{
+.link--style:hover {
     font-size: 2.3rem;
-    /* background-image: linear-gradient(to top, #999999  0%, #111  100%); */
 }
 
-.containerCantida{
-    display: flex;
-    align-items: center; 
+.containerCantida {
     gap: 1rem;
 }
 
-.raya{
+.raya {
     border-right: 2px solid var(--textoColor);
     height: 2rem;
 }
 
-.artiNav--style{
-    font-size: 2rem;
+
+.artiNav--style {
+    font-size: 2.3rem;
     color: var(--textoColor);
 }
 
-.cuenta--style{
-    text-decoration: none;
+.cuenta--style,
+.link--style {
     font-size: 2rem;
+    font-weight: 500;
+}
+
+.cuenta--style {
+    text-decoration: none;
     text-decoration: none;
     color: var(--textoColor);
 }
 
 /* Codigo css para el automatic image slider */
+
+.imgContainer,
+.seleccionImg {
+    display: flex;
+    justify-content: center;
+}
+
 .slider {
     width: 100%;
     margin: 0 auto;
@@ -102,14 +129,13 @@ body{
     margin-bottom: var(--globalBottom);
 }
 
-.img--style{
+.img--style {
     width: 80%;
     height: 55rem;
     border-radius: var(--borderGContainer);
 }
-.imgContainer{
-    display: flex;
-    justify-content: center;
+
+.imgContainer {
     list-style: none;
     width: 100%;
 }
@@ -122,13 +148,11 @@ body{
     margin-bottom: .5rem;
 }
 
-.seleccionImg{
-    display: flex;
-    justify-content: center;
+.seleccionImg {
     gap: 5rem;
 }
 
-.circulo{
+.circulo {
     height: 1.5rem;
     width: 1.5rem;
     background-color: rgba(0, 0, 0, 80%);
@@ -136,195 +160,222 @@ body{
     transition: background-color 1s ease-in;
 }
 
-.circulo:hover{
+.circulo:hover {
     cursor: pointer;
     background-color: rgba(255, 255, 255, 80%);
 }
 
 @keyframes slide {
 
-    0% { margin-left: 0%; }
+    0% {
+        margin-left: 0%;
+    }
 
-    20% { margin-left: 0%; }
+    20% {
+        margin-left: 0%;
+    }
 
-    25% { margin-left: -100%; }
+    25% {
+        margin-left: -100%;
+    }
 
-    45% { margin-left: -100%; }
+    45% {
+        margin-left: -100%;
+    }
 
-    50% { margin-left: -200%; }
+    50% {
+        margin-left: -200%;
+    }
 
-    70% { margin-left: -200%; }
+    70% {
+        margin-left: -200%;
+    }
 
-    75% { margin-left: -300%; }
+    75% {
+        margin-left: -300%;
+    }
 
-    100% { margin-left: -300%; }
+    100% {
+        margin-left: -300%;
+    }
 }
 
 /* CSS de los beneficios */
-.profit--style{
+
+.profit--style,
+.iconoProfit,
+.orgaProfit {
     display: flex;
+}
+
+.iconoProfit,
+.orgaProfit {
+    justify-content: center;
+    align-items: center;
+}
+
+.profit--style {
     justify-content: space-around;
     background-color: rgba(var(--fondoGris));
     border-radius: 10rem;
     margin-bottom: var(--globalBottom);
 }
 
-.iconoProfit{
-    width:  4rem;
+.iconoProfit {
+    width: 4rem;
     height: 4rem;
     background-color: aliceblue;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.orgaProfit{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:2rem;
+.orgaProfit {
+    gap: 2rem;
 }
-.textoProfit{
+
+.textoProfit {
     font-size: 2rem;
     color: var(--textoColor);
 }
+
 /* CSS de componentes */
-.descripcionTech{
+
+.marketing, .ordenMenor, .ordenMayor, .ordenarB, .anuncio, .anuncioEnlance {
+    display: flex;
+}
+
+.ordenMenor, .ordenMayor, .ordenarB {
+    justify-content: center;
+}
+
+.descripcionTech__Texto, .marketing__texto, .tituloAnuncio, .descripAnuncio{
+    color: var(--textoColor);
+}
+
+.anuncio, .descripcionTech, .botonDescripcion{
     background-color: rgba(var(--fondoNegro));
+}
+
+.descripcionTech__Texto, .marketing__texto, .botonDescripcion, .tituloAnuncio, .descripAnuncio{
+    text-align: center;
+}
+
+.descripcionTech {
     border-radius: var(--borderGContainer);
     margin-bottom: var(--globalBottom);
 }
 
-.descripcionTech__Texto{
-    color: var(--textoColor);
-    text-align: center;
+.descripcionTech__Texto {
     font-size: 3.2rem;
     padding-top: 5rem;
 }
 
-.marketing{
-    display: flex;
+.marketing {
     justify-content: space-between;
     margin-bottom: 5rem;
 }
 
-.ordenMenor{
+.ordenMenor {
     flex: 1;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
-.ordenMayor{
+.ordenMayor {
     flex: 1.2;
-    display: flex;
-    justify-content: center;
 }
-.marketing__texto{
-    color: var(--textoColor);
-    text-align: center;
+
+.marketing__texto {
     font-size: 2rem;
     margin-left: 3rem;
 }
 
-.marketing__texto:nth-child(1){
+.marketing__texto:nth-child(1) {
     font-size: 2.5rem;
 }
 
-.marketing__texto:nth-child(2){
+.marketing__texto:nth-child(2) {
     text-align: justify;
 }
 
-.ordenarB{
-    display: flex;
-    justify-content: center;
+.ordenarB {
     padding-bottom: 2rem;
 }
 
-.botonDescripcion{
-    text-align: center;
-    background-color: rgba(var(--fondoNegro)); 
+.botonDescripcion {
     border: none;
     width: 80%;
     transition: background-color 2s ease-out;
 }
 
-.botonDescripcion:hover{
+.botonDescripcion:hover {
     cursor: pointer;
-    background-color: rgba(var(--fondoGris)); 
+    background-color: rgba(var(--fondoGris));
 }
 
-.gridAnuncio{
+.gridAnuncio {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin-bottom: var(--globalBottom);
 }
 
-.anuncio{
-    display: flex ;
+.anuncio {
     width: 60rem;
     padding: 3rem 3rem 1rem 3rem;
     border-radius: var(--borderGContainer);
-    background-color: rgba(var(--fondoNegro));
 }
 
-.textoAnuncio{
+.textoAnuncio {
     margin: 0 2rem;
 }
 
-.anuncioImagen{
-    width:100%;
+.anuncioImagen {
+    width: 100%;
 }
 
-.tituloAnuncio{
-    text-align: center;
-    color: var(--textoColor);
+.tituloAnuncio {
     font-size: 2.5rem;
 }
 
-.descripAnuncio{
-    text-align: center;
-    color: var(--textoColor);
+.descripAnuncio {
     font-size: 2rem;
     text-align: justify;
 }
 
-.anuncioLink{
+.anuncioLink {
     text-decoration: none;
     font-size: 2rem;
     color: #0096C6;
 }
 
 
-.anuncioEnlance{
-    display: flex;
-    display: colum;
-}
+
 
 /* CSS de la suscripcion */
-.suscripcion{
+.suscripcion__titulo, .suscripcion__texto{
+    color: var(--textoColor);
+}
+
+.suscripcion {
     margin-bottom: var(--globalBottom);
 }
 
-.suscripcion__titulo{
-    color: var(--textoColor);
+.suscripcion__titulo {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
-.suscripcion__texto{
-    color: var(--textoColor);
+.suscripcion__texto {
     font-size: 2.2rem;
     margin-bottom: 1.5rem;
 }
-.suscripcion__datos{
+
+.suscripcion__datos {
     display: flex;
     align-items: center;
     margin: 1.5rem 0;
 }
-.suscripcion__datos--inStyle{
+
+.suscripcion__datos--inStyle {
     font-size: 1.8rem;
     padding: 1.5rem 1rem 1rem 1.5rem;
     margin-right: 3rem;
@@ -332,29 +383,26 @@ body{
     border: 5px solid black;
 }
 
-.boton{
+.botonSuscrip {
     padding: 1rem 5rem;
-    border-radius: 1rem; 
-    font-size: 2rem;
-    background-image: linear-gradient(to left, #8c1414 0%, #b79ca7 100% );
-    border: 3px solid black;
 }
 
-.boton:hover{
+.boton:hover {
     cursor: pointer;
 }
 
 /* CSS footer */
-.footer--style{
+
+.footer--style {
     background-color: rgba(var(--fondoGris));
 }
 
-.gridFooter{
+.gridFooter {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
-.redesFooter__Titulo{
+.redesFooter__Titulo {
     color: white;
     font-size: 2.3rem;
     font-weight: 500;
@@ -362,7 +410,7 @@ body{
     margin: 2rem 0;
 }
 
-.iconoRedes{
+.iconoRedes {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -376,89 +424,82 @@ body{
 }
 
 /* ======================================== Iniciar Sesison ======================================== */
-.sesion__tamanio{
-    width: min(85%, 100rem);
-    margin: 0 auto;
-    height: 40rem;
-    margin-bottom: 20rem;
-    
+.sesionUser, .camposContainer, .botosContainer, .backgroundSesion2__size{
+    display: flex;
 }
 
-.sesion--style{
-    border-radius: 3rem;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+.sesionUser, .camposContainer{
+    flex-direction: column;
 }
 
-.backgroundSesion{
-    background-image: linear-gradient(to top, #ace5ee  0%, white 100%);
+.backgroundSesion, .backgroundSesion2{
     border-top-left-radius: 3rem;
     border-bottom-left-radius: 3rem;
     padding: 5rem 0rem 10rem 0;
     border: 2px solid black;
 }
 
-.backgroundSesion2{
+.sesion__tamanio {
+    width: min(85%, 100rem);
+    margin: 0 auto;
+    height: 40rem;
+    margin-bottom: 20rem;
+}
+
+.sesion--style {
+    border-radius: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.backgroundSesion {
+    background-image: linear-gradient(to top, #ace5ee 0%, white 100%);
+}
+
+.backgroundSesion2 {
     background-image: linear-gradient(to top, rgba(var(--fondoNegro)) 0%, white 100%);
-    border-top-right-radius: 3rem;
-    border-bottom-right-radius: 3rem;
-    padding: 5rem 0rem 10rem 0;
-    border: 2px solid black;
 }
 
-.sesionUser{
-    display: flex;
-    flex-direction: column;
+.sesionUser {
     width: 80%;
-    margin: 0 auto;    
+    margin: 0 auto;
 }
 
-.tituloContainer__texto{
+.tituloContainer__texto {
     font-size: 4rem;
     color: var(--fondoNegro);
 }
 
-.camposContainer{
-    display: flex;
-    flex-direction: column;
+.camposContainer {
     gap: 3rem;
     margin-bottom: 3rem;
 }
 
-.camposUsuario--style{
+.camposUsuario--style {
     width: 80%;
     margin-left: 3rem;
     font-size: 2rem;
     padding: 1rem 0rem 1rem 2rem;
     border-radius: 2rem;
     border: 2px solid black;
-    box-shadow: 10px 22px 18px -3px rgba(0,0,0,0.62);
+    box-shadow: 10px 22px 18px -3px rgba(0, 0, 0, 0.62);
 }
 
-.botosContainer{
+.botosContainer {
     width: 100%;
     margin: 2rem auto 0 auto;
-    display: flex;
     justify-content: space-between;
 }
 
-.botones{
+.botonIniciarS {
     padding: 1rem 3rem;
-    border-radius: 1rem; 
-    font-size: 1.8rem;
-    color: white;
-    background-image: linear-gradient(to left, #672a42   0%, #aa6f73  100% );
-    border: none;
-    box-shadow: 10px 22px 18px -3px rgba(0,0,0,0.62);
 }
 
 
-.imagenUsu{
+.imagenUsu {
     width: 70%;
 }
 
-.backgroundSesion2__size{
-    display: flex;
+.backgroundSesion2__size {
     justify-content: center;
 }
-

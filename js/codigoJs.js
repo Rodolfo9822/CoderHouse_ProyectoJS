@@ -29,4 +29,26 @@ const enviarDatos = (...args) => {
         alert("Error, comprobar los datos");
 }
 
-console.log(suscripNombre);
+
+/* Crear usuario predeterminado */
+const ususario = document.querySelector("#ususario");
+const password = document.querySelector("#password");
+
+const validacionDatos = (user,pass) => {
+    if (ususario.value === user && password.value  === pass)
+        alert("Verificacion de datos exitoso");
+    else
+    alert("Error de Usuario o Contraseña");
+}
+
+const  guardarDatos = () => { localStorage.setItem("datosUsuario", JSON.stringify(usuarioPredeterminado)); }
+guardarDatos();
+
+const recuperarDatosUsuario =  () => {
+    if (localStorage.getItem("datosUsuario")){
+        const datosUsuario = JSON.parse(localStorage.getItem("datosUsuario"));
+        validacionDatos(datosUsuario.nickname,datosUsuario.password);
+    }
+}
+
+ 
