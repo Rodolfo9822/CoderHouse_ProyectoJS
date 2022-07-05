@@ -433,10 +433,8 @@ body {
 }
 
 .backgroundSesion, .backgroundSesion2{
-    border-top-left-radius: 3rem;
-    border-bottom-left-radius: 3rem;
     padding: 5rem 0rem 10rem 0;
-    border: 2px solid black;
+    
 }
 
 .sesion__tamanio {
@@ -454,10 +452,16 @@ body {
 
 .backgroundSesion {
     background-image: linear-gradient(to top, #ace5ee 0%, white 100%);
+    border-top-left-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+    border-right: 2px solid black;
 }
 
 .backgroundSesion2 {
-    background-image: linear-gradient(to top, rgba(var(--fondoNegro)) 0%, white 100%);
+    background-image: linear-gradient(to top, black 0%, white 90%);
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    border-left: 2px solid black;
 }
 
 .sesionUser {
@@ -503,3 +507,104 @@ body {
 .backgroundSesion2__size {
     justify-content: center;
 }
+
+
+
+/* ======================================== Crear Usuario ======================================== */
+.marginForm{
+    margin-bottom: var(--globalBottom);
+}
+
+.imgForm{
+    background-image: url("../img/imgFormulario.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50rem;
+}
+
+.containerForm{
+    width:min(60%,100rem);
+    margin: -15rem auto 0 auto;
+}
+
+.styleForm{
+    background-color: rgba(var(--fondoGris));
+    background-image: linear-gradient(to top, rgba(var(--fondoGris)) 0%, white 150%);
+    border-radius: 2rem;
+}
+
+.styleForm legend{
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
+    color: black;
+    font-weight: 700;
+}
+
+.camposStyle{
+    padding: 5rem 0rem;
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.campoForm{
+    display: flex;
+    flex-direction: column;
+    padding:0rem 1rem;
+}
+
+.campoForm label{
+    margin: 1rem 0rem;
+    padding-left: 1rem;
+    font-size: 2rem;
+    color: black;
+    font-weight: 600;
+}
+
+.campoForm input{
+    padding: 0.5rem 0rem 0.5rem 1rem;
+    font-size: 1.8rem;
+    color: black;
+    margin-bottom: 1rem;
+    outline: none ! important;
+}
+
+.inputStyle{
+    width: 80%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.botonFormConta{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 2rem;
+}
+
+.botonForm{
+    padding: 1rem 5rem;
+}
+
+.checkContainer{
+    width: 50%;
+    display: flex;
+}
+
+.checkboxStyle{
+    margin-right: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.checkboxText{
+    margin: 0;
+    color: var(--textoColor);
+    font-weight: 400;
+}
+
+
