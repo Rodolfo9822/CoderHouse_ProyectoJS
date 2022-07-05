@@ -348,8 +348,6 @@ body {
 }
 
 
-
-
 /* CSS de la suscripcion */
 .suscripcion__titulo, .suscripcion__texto{
     color: var(--textoColor);
@@ -387,7 +385,7 @@ body {
     padding: 1rem 5rem;
 }
 
-.boton:hover {
+.botonSuscrip:hover {
     cursor: pointer;
 }
 
@@ -607,4 +605,7 @@ body {
     font-weight: 400;
 }
 
+.botonForm:hover, .checkboxStyle:hover{
+    cursor: pointer;
+}
 

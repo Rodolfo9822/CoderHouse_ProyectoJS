@@ -33,6 +33,15 @@ const anuncioEquipos = [
 ]
 
 const usuarioPredeterminado =  {
-        nickname: "CoderHouse",
+        nombre: "CoderHouse",
         password: "12345"
     }    
+
+const datosStorage =  [
+    {
+        storage:"datosUsuario",
+        nombre: "CoderHouse"
+    }
+]
+
+ 
