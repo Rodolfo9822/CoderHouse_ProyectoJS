@@ -4,9 +4,9 @@ nav.innerHTML = "";
 const agregarLinks = () => {
     linksNombre.forEach(links => {
         const link = document.createElement("a");
-        link.href = "#";
+        link.href = links.archivo;
         link.classList.add("link--style");
-        link.innerText = links;
+        link.innerText = links.nombre;
         link.id = links + "Nav";
         nav.append(link);
     })

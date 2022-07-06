@@ -104,7 +104,7 @@ body {
 
 .cuenta--style,
 .link--style {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 500;
 }
 
@@ -420,8 +420,12 @@ body {
 }
 
 /* ======================================== Iniciar Sesison ======================================== */
-.sesionUser, .camposContainer, .botosContainer, .backgroundSesion2__size{
+.sesionUser, .camposContainer, .botosContainer, .backgroundSesion2__size, .cuentaProfit, .tituloContainer{
     display: flex;
+}
+
+.tituloContainer{
+    align-items: center;
 }
 
 .sesionUser, .camposContainer{
@@ -436,7 +440,6 @@ body {
 .sesion__tamanio {
     width: min(85%, 100rem);
     margin: 0 auto;
-    height: 40rem;
     margin-bottom: 20rem;
 }
 
@@ -465,10 +468,26 @@ body {
     margin: 0 auto;
 }
 
+
 .tituloContainer__texto {
     font-size: 4rem;
     color: var(--fondoNegro);
+    margin-right: 2rem;
 }
+
+.logoIniciar{
+    font-size: 3rem;
+    font-weight: 700;
+    color: black;
+    transition: font-size 2s ease;
+}
+
+
+.logoIniciar:hover{
+    font-size: 2.8rem;
+}
+
+
 
 .camposContainer {
     gap: 3rem;
@@ -488,13 +507,16 @@ body {
 .botosContainer {
     width: 100%;
     margin: 2rem auto 0 auto;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .botonIniciarS {
     padding: 1rem 3rem;
 }
 
+.botonIniciarS:hover{
+    cursor: pointer;
+}
 
 .imagenUsu {
     width: 70%;
@@ -504,7 +526,24 @@ body {
     justify-content: center;
 }
 
+.cuentaProfit{
+    justify-content: center;
+    align-items: center;
+}
 
+.cuentaProfit__texto, .cuentaProfit__link{
+    margin-right: 1rem;
+    font-weight: 500;
+}
+
+.cuentaProfit__texto, .cuentaProfit__link{
+    color: var(--textoColor);
+}
+
+.cuentaProfit__link{
+    text-decoration: none;
+    color: #1fffff;
+}
 
 /* ======================================== Crear Usuario ======================================== */
 .marginForm{
