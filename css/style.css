@@ -302,6 +302,7 @@ body {
     transition: background-color 2s ease-out;
     border-bottom-left-radius: var(--borderGContainer) ;
     border-bottom-right-radius: var(--borderGContainer) ;
+    outline: 0 !important;
 }
 
 .botonDescripcion:hover {
@@ -381,6 +382,7 @@ body {
 
 .botonSuscrip {
     padding: 1rem 5rem;
+    outline: 0 !important;
 }
 
 .botonSuscrip:hover {
@@ -647,3 +649,127 @@ body {
     cursor: pointer;
 }
 
+/* ======================================== Productos ======================================== */
+.mainProducto{
+    display: flex;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 70rem;
+    flex: 1;
+}
+
+.containerProductos{
+    width: 80%;
+    margin: 0rem 3rem;
+    flex: 3;
+}
+
+.gridProductos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border: 1px solid white;
+    margin-bottom: var(--globalBottom);
+
+}
+
+.productosBox, .productosBoxRi{
+    border-bottom: 1px solid white;
+}
+
+.productosBoxRi{
+    border-right: 1px solid white;
+}
+
+.tamanioBox{
+    margin: 0 auto;
+    width: 80%;
+    padding: 2rem 0rem;
+}
+
+.imgProducto{
+    width: 70%;
+}
+
+.acomodoBox{
+    display: flex;
+    justify-content: center;
+    margin-bottom:1.5rem ;
+}
+
+.acomodoBox__botones{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tamanioBox p {
+    color: var(--textoColor);
+    margin:0rem 0rem 1.5rem 0rem;
+}
+
+.productoPrecio{
+    display: flex; 
+    gap: 2rem;
+}
+
+.botonesProducto{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.acomodoBox__botones input{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: .5rem 1.3rem;
+    color: var(--textoColor);
+    background: transparent;
+    border: 2px inset #048888;
+    outline: 0 !important;
+}
+.acomodoBox__botones input:hover{
+    cursor: pointer;
+}
+
+.componentesBox{
+    background-image: linear-gradient(to top, rgba(var(--fondoGris)) 0%, white 150%);
+    width: 80%;
+    margin: 0 auto;
+    border: 3px inset white;
+}
+
+.menu__texto{
+    width: 100%;
+    background-color: rgba(var(--fondoGris));
+    padding: 1rem 0rem;
+}
+
+.componentesBox h3{
+    color: var(--textoColor);
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0;
+}
+.componentesBox ul{
+    margin: 0;
+    padding: 0;
+}
+
+.menuProducto{
+    font-size: 2rem;
+    font-weight: 500;
+    list-style: none;
+    text-align: center;
+    padding: 1.5rem 0rem;
+    border-bottom: 1px solid black;
+}
+
+.menuProducto:hover{
+    cursor: pointer;
+    background-image: linear-gradient(to top, #def3f6 0%, white 100%);
+}
+
+.menuProducto:last-child{
+    border-bottom: none;
+}
