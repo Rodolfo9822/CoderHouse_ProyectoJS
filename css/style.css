@@ -84,7 +84,7 @@ body {
 }
 
 .link--style:hover {
-    font-size: 2.3rem;
+    font-size: 2rem;
 }
 
 .containerCantida {
@@ -104,7 +104,7 @@ body {
 
 .cuenta--style,
 .link--style {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
@@ -296,14 +296,12 @@ body {
     text-align: justify;
 }
 
-.ordenarB {
-    padding-bottom: 2rem;
-}
-
 .botonDescripcion {
     border: none;
-    width: 80%;
+    width: 100%;
     transition: background-color 2s ease-out;
+    border-bottom-left-radius: var(--borderGContainer) ;
+    border-bottom-right-radius: var(--borderGContainer) ;
 }
 
 .botonDescripcion:hover {
@@ -449,7 +447,7 @@ body {
 }
 
 .backgroundSesion {
-    background-image: linear-gradient(to top, #ace5ee 0%, white 100%);
+    background-image: linear-gradient(to top, rgba(var(--fondoGris)) 0%, white 150%);
     border-top-left-radius: 3rem;
     border-bottom-left-radius: 3rem;
     border-right: 2px solid black;
@@ -519,6 +517,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     height: 50rem;
+    border-radius: 2rem;
 }
 
 .containerForm{

@@ -37,11 +37,6 @@ const usuarioPredeterminado =  {
         password: "12345"
     }    
 
-const datosStorage =  [
-    {
-        storage:"datosUsuario",
-        nombre: "CoderHouse"
-    }
-]
+const llaveStorage =  ["CoderHouse"];
 
  
