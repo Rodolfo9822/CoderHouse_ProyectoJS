@@ -70,4 +70,44 @@ const anadirClase = () => {
     }
 }
 
+/* Codigo para cambiar de producto */
+
+const imgPr = (i,feature) => {
+    const img = document.querySelector(`#imgPr`+i);
+    img.src = feature ;
+}
+
+const datosPr = (i,feature) => {
+    const datos = document.querySelector(`#datosPr`+i)
+    datos.innerText = feature ;
+}
+
+const envioPr = (i,feature) => {
+    const envio = document.querySelector(`#envioPr`+i)
+    envio.innerText = feature ;
+}
+
+const precioPr = (i,feature) => {
+    const precio = document.querySelector(`#precioPr`+i)
+    precio.innerText = `$${feature}`;
+}
+
+const dispoPr = (i,feature) => {
+    const dispo = document.querySelector(`#dispoPr`+i)
+    dispo.innerText = `Disponible: ${feature}` ;
+}
+
+
+const cambioProducto = (dataBase) => {
+    for (let i = 1; i < 7; i ++) {
+        const producto = dataBase[i-1];
+
+        imgPr(i,producto.imagen);
+        datosPr(i,producto.datos);
+        envioPr(i,producto.envio);
+        precioPr(i,producto.precio);
+        dispoPr(i,producto.cantidad);
+    }
+}
+
 
