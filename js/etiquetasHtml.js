@@ -51,7 +51,6 @@ const crearAnuncion = (num, textosAnuncio, enlaceAnuncio, imagenAnuncio) => {
 
 }
 
-
 const anunciosAutomaticos = () => {
     for (let i = 0; i <= 3; i++) {
         const textosAnuncio = document.querySelector("#textosAnuncio" + i);
@@ -64,5 +63,11 @@ const anunciosAutomaticos = () => {
     }
 }
 
+const anadirClase = () => {
+    for (let i = 1; 4 >= i; i++) {
+        const anuncio = document.querySelector("#anuncio"+i);
+        anuncio.classList.add("anuncio");
+    }
+}
 
 

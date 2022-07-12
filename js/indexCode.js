@@ -1,5 +1,6 @@
 const botontest = document.querySelector("#botontest");
 botontest.addEventListener("click", ()=>{
+    anadirClase();
     anunciosAutomaticos();
 }, false);
 
