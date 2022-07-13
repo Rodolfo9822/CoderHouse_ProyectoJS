@@ -138,6 +138,8 @@ const nuevoUsuario = () => {
     }
 }
 
+/* Codigo contador de productos */
+const agregarProducto = (newP) => localStorage.setItem("productosTotales", newP);
 
 
 

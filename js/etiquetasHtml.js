@@ -110,4 +110,12 @@ const cambioProducto = (dataBase) => {
     }
 }
 
+/* Codigo para agregar producto al carrito de compras */
+const contadorProductos = document.querySelector("#contadorProductos");
+
+const obtenerTotal = () => JSON.parse(localStorage.getItem("productosTotales")) ;
+
+const mostrarTotal = () => contadorProductos.innerText = obtenerTotal();
+mostrarTotal();
+
 
