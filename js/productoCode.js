@@ -1,8 +1,24 @@
-const procesador = document.querySelector("#procesador");
-procesador.addEventListener("click", () => cambioProducto(procesadores));
+const cpu = document.querySelector("#procesador");
+cpu.addEventListener("click", () => cambioProducto(procesadores));
 
-const graficas = document.querySelector("#graficas");
-graficas.addEventListener("click", () => cambioProducto(grafica));
+const grafica = document.querySelector("#grafica");
+grafica.addEventListener("click", () => cambioProducto(graficas));
+
+
+const motherboard = document.querySelector("#motherboard");
+motherboard.addEventListener("click", () => cambioProducto(motherboards));
+
+const memoriaRam = document.querySelector("#memoriaRam");
+memoriaRam.addEventListener("click", () => cambioProducto(rams));
+
+const almacenamiento = document.querySelector("#almacenamiento");
+almacenamiento.addEventListener("click", () => cambioProducto(almacenamientos));
+
+const fuente = document.querySelector("#fuente");
+fuente.addEventListener("click", () => cambioProducto(fuentes));
+
+const gabinete = document.querySelector("#gabinete");
+gabinete.addEventListener("click", () => cambioProducto(gabinetes));
 
 
 const botonAgregar1 = document.querySelector("#botonAgregar1");
