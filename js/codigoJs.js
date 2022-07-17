@@ -62,8 +62,14 @@ const buscarUsuario = () => {
 
 const recuperarDatosUsuario = () => {
     const datos = buscarUsuario()
-    const datosUsuario = JSON.parse(localStorage.getItem(datos));
-    validacionDatos(datosUsuario.nombre, datosUsuario.password);
+    
+    if (datos !== undefined){
+        const datosUsuario = JSON.parse(localStorage.getItem(datos));
+        validacionDatos(datosUsuario.nombre, datosUsuario.password);
+    }
+    else{
+        alert("El usuario No existe")
+    }
 }
 
 
@@ -121,15 +127,11 @@ const crearObjeto = () => {
     }
 }
 
-const almacenLlaves = () => {
-
-}
-
 const nuevoUsuario = () => {
     const datos = crearObjeto();
 
     if (datos !== null) {
-        const storageName = `user${datos.nombre}${datos.apellido}`;
+        const storageName = `user${datos.nombre}`;
         llaveStorage.push(storageName)
         localStorage.setItem("llaves", JSON.stringify(llaveStorage));
         localStorage.setItem(storageName, JSON.stringify(datos));

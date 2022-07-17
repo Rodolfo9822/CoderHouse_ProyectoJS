@@ -42,7 +42,18 @@ const agregarTexto = (clase, datos, id, number, cajaPadre) => {
     caja.append(texto);
 }
 
+const transformarPrecio = (costo) =>{
+    costo = costo.slice(1,);
+    return parseFloat(costo);
+}
+
+const costoTotal = (total) =>{
+    const totalCompra = document.querySelector("#totalCompra");
+    totalCompra.innerText = "$"+total;
+}
+
 const mostrarShoppingCar = () => {
+    let total = 0;
     for (let i = 0; i < conjuntoProducto.length; i++) {
         const cajaPadre2 = caja("box", cajaPadre, i, "styleShopping");
         const { img, datos, envio, costo, dipos } = conjuntoProducto[i];
@@ -52,7 +63,10 @@ const mostrarShoppingCar = () => {
         agregarTexto("datosShopping", envio, "envio", i, boxSon);
         agregarTexto("datosShopping", costo, "costo", i, boxSon);
         agregarTexto("datosShopping", dipos, "disponible", i, boxSon);
+        
+        total += transformarPrecio(costo);
     }
+    costoTotal(total);
 }
 
 const condicionMostrar = () => {

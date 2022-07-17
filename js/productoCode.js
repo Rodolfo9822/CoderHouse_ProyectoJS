@@ -75,7 +75,6 @@ const obtener = (botonAgregar) => {
     const costo = boton.children[1].children[2].firstElementChild.textContent;
     const dispo = boton.children[1].children[2].lastElementChild.textContent;
     guardarProductos(img, datos, envio, costo, dispo);
-
 }
 
 const guardarProductos = (img, datos, envio, costo, dispo) => {
