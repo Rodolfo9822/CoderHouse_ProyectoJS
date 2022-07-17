@@ -774,3 +774,49 @@ body {
 .menuProducto:last-child{
     border-bottom: none;
 }
+
+
+/* Shopping car */
+.marginShoppingCar{
+    margin-bottom: 30rem;
+}
+
+.container--style{
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid white;
+    margin-bottom: var(--globalBottom);
+}
+
+.styleShopping{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+    padding: 1rem 0rem;
+}
+
+.styleShopping p {
+    color: var(--textoColor);
+    font-size: 1.6rem;
+}
+
+.imgShopping{
+    width: 200px;
+    margin: 0rem 2rem;
+}
+
+.arrangeButton{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.botonShopping{
+    padding: 1rem 1rem;
+}
+
+.botonShopping:hover{
+    cursor: pointer;
+}
+

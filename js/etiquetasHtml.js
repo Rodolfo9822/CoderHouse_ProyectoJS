@@ -118,4 +118,3 @@ const obtenerTotal = () => JSON.parse(localStorage.getItem("productosTotales")) 
 const mostrarTotal = () => contadorProductos.innerText = obtenerTotal();
 mostrarTotal();
 
-

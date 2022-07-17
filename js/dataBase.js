@@ -5,24 +5,10 @@ const linksNombre = [
     },
     
     {
-        nombre: "Tienda",
-        archivo : "tienda.html"
+        nombre: "Carrito de compras",
+        archivo : "carrito.html"
     },
     
-    {
-        nombre: "Configura tu Pc",
-        archivo : "configurar.html"
-    },
-    
-    {
-        nombre: "Asus PC",
-        archivo : "asus.html"
-    },
-    
-    {
-        nombre: "Aourus PC",
-        archivo : "aourus.html"
-    }
 
 ]
 const pathSliderImg = ["Productos", "Tienda", "Configura tu Pc", "Asus PC", "Aourus PC"]
