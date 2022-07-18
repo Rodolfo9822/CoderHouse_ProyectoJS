@@ -74,7 +74,7 @@ const recuperarDatosUsuario = () => {
 
 
 /* Crear nuevo usuario y guardarlo en storage */
-
+/* 
 const formNombre = document.querySelector("#formNombre");
 const formApellido = document.querySelector("#formApellido");
 const formEmail = document.querySelector("#formEmail");
@@ -139,6 +139,7 @@ const nuevoUsuario = () => {
         alert(`Exito!!!\nBienvenido ${datos.nombre}`);
     }
 }
+ */
 
 /* Codigo contador de productos */
 const agregarProducto = (newP) => localStorage.setItem("productosTotales", newP);

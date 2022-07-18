@@ -37,11 +37,7 @@
                 </div>
             </div>
 
-            <div class="containerCantida">
-                <div> <a class="cuenta--style" href="iniciarS.html"> Iniciar Sesion</a> </div>
-                <div class="raya"></div>
-                <div> <a class="cuenta--style" href="crearS.html">Crear Usuario</a> </div>
-            </div>
+           
         </div>
     </header>
 
@@ -56,29 +52,25 @@
 
             <div class="camposStyle">
                 <div class="campoForm">
-                    <label for="formNombre">NickName</label>
-                    <input class="inputStyle" type="text" placeholder="NickName" id="formNombre">
+                    <label for="formNombre">Nombre</label>
+                    <input class="inputStyle" type="text" placeholder="Nombre" id="formNombre">
                 </div>
 
                 <div class="campoForm">
-                    <label for="formApellido">Nombre Completo</label>
-                    <input class="inputStyle" type="text" placeholder="Nombre Completo" id="formApellido">
+                    <label for="formApellido">Email</label>
+                    <input class="inputStyle" type="text" placeholder="Email" id="formApellido">
                 </div>
 
                 <div class="campoForm">
-                    <label for="formEmail">Email</label>
-                    <input class="inputStyle" type="email" placeholder="Email" id="formEmail">
+                    <label for="formEmail">Ingrese el pago</label>
+                    <input class="inputStyle totalPrecio" type="number" placeholder="Pago" id="formPago">
                 </div>
 
                 <div class="campoForm">
-                    <label for="formContra">Contraseña</label>
-                    <input class="inputStyle" type="password" placeholder="Contraseña" id="formContra">
+                    <label for="formContra">Total</label>
+                    <input class="inputStyle totalPrecio" type="text" id="formPagar" min="0" onkeydown="return false">
                 </div>
 
-                <div class="campoForm">
-                    <label for="formRepContra">Repite tu contraseña</label>
-                    <input class="inputStyle" type="password" placeholder="Contraseña" id="formRepContra">
-                </div>
             </div>
 
             <div class="botonFormConta">
@@ -91,7 +83,7 @@
                 </div>
 
                 <div>
-                    <input id="botonFormC" type="submit" class="disenioBoton botonForm" value="Enviar">
+                    <button id="botonFormC" class="disenioBoton botonForm"> Realizar Pago</button>
                 </div>
             </div>
         </form>
@@ -150,7 +142,7 @@
     <script src="js/dataBase.js"></script>
     <script src="js/etiquetasHtml.js"></script>
     <script src="js/codigoJs.js"></script>
-    <script src="js/crearUsuario.js"></script>
+    <script src="js/pagar.js"></script>
     <script src="js/eventos.js"></script>
 </body>
 

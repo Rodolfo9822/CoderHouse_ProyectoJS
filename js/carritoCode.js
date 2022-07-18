@@ -1,6 +1,7 @@
 const imgPrueba = document.querySelector("#imgPrueba");
 const conjuntoProducto = JSON.parse(localStorage.getItem("productos"));
 const cajaPadre = document.querySelector("#cajaPadre");
+const totalCompra = document.querySelector("#totalCompra");
 
 const cajaProductos = boxFather => document.querySelector("#" + boxFather);
 
@@ -48,7 +49,6 @@ const transformarPrecio = (costo) =>{
 }
 
 const costoTotal = (total) =>{
-    const totalCompra = document.querySelector("#totalCompra");
     totalCompra.innerText = "$"+total;
 }
 
@@ -79,16 +79,21 @@ condicionMostrar();
 /* Codigo botones */
 const eliminarProductos = document.querySelector("#eliminarProductos");
 
+
+
 const borrar = () => {
-    cajaPadre.innerHTML = "";
     localStorage.removeItem("productos");
     localStorage.removeItem("productosTotales");
+    contadorProductos.innerText = 0;
+    totalCompra.innerText = 0;
 }
 
 eliminarProductos.addEventListener("click", () => {
     borrar();
     alert("Los productos se eliminaron de manera exitosa\nPor favor actualizar la página para ver el cambio ")
 })
+
+
 
 
 
